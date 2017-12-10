@@ -33,12 +33,16 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_design_design_component__ = __webpack_require__("../../../../../src/app/pages/design/design.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routes__ = __webpack_require__("../../../../../src/app/app.routes.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_fixed_top_fixed_top_component__ = __webpack_require__("../../../../../src/app/components/fixed-top/fixed-top.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_about_about_component__ = __webpack_require__("../../../../../src/app/components/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_title_heading_title_heading_component__ = __webpack_require__("../../../../../src/app/components/title-heading/title-heading.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -63,7 +67,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_6__components_banner_banner_component__["a" /* BannerComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_home_home_component__["a" /* HomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_design_design_component__["a" /* DesignComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_fixed_top_fixed_top_component__["a" /* FixedTopComponent */]
+                __WEBPACK_IMPORTED_MODULE_10__components_fixed_top_fixed_top_component__["a" /* FixedTopComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_title_heading_title_heading_component__["a" /* TitleHeadingComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -102,10 +108,71 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/about/about.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"about-section\">\n\t<app-title-heading heading=\"About Cingle\"></app-title-heading>\n\t<p class=\"text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>\n Maecenas sodales interdum varius. Sed euismod convallis tortor, eget ornare odio imperdiet id.<br> \nProin elementum mi ipsum, a elementum sem elementum at.</p>\n<a href=\"\" class=\"read_btn\"> Read More</a>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/about/about.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".about-section p {\n  font-size: 16px;\n  font-weight: 600;\n  color: #213a6a;\n  line-height: 20px;\n  margin-bottom: 0;\n  margin-top: 47px; }\n\n.about-section .read_btn {\n  display: block;\n  max-width: 200px;\n  width: 100%;\n  margin: 0 auto;\n  border-radius: 5px;\n  background-color: #ff6600;\n  color: #fff;\n  font-size: 16px;\n  font-weight: 500;\n  text-align: center;\n  padding: 18.5px 0px;\n  line-height: 13px;\n  text-decoration: none;\n  margin-top: 50px; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/about/about.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AboutComponent = (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    AboutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-about',
+            template: __webpack_require__("../../../../../src/app/components/about/about.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/about/about.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutComponent);
+    return AboutComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/banner/banner.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-contact-header></app-contact-header>\n<div class=\"header_banner\">\n\t<app-header></app-header>\n\t\n</div>\n"
+module.exports = "<app-contact-header></app-contact-header>\n<div class=\"header_banner\">\n\t<app-header></app-header>\n\t<div class=\"banner_content\">\n\t\t<div class=\"container text-center\">\n\t\t\t<img src=\"/assets/images/stars.png\" alt=\"Stars Img\">\n\t\t\t<div class=\"sprater_b\">\n\t\t\t\t<div class=\"b-top\"></div>\t\n\t\t\t\t<div class=\"b-bottom\"></div>\t\n\t\t\t</div>\n\t\t\t<h4>We Are Small But,</h4>\n\t\t\t<h1>Creative</h1>\n\t\t\t<div class=\"sprater_b\">\n\t\t\t\t<div class=\"b-top\"></div>\t\n\t\t\t\t<div class=\"b-bottom\"></div>\t\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n"
 
 /***/ }),
 
@@ -117,7 +184,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".header_banner {\n  background-image: url(\"/assets/images/banner_bg.png\");\n  background-size: cover;\n  background-position: center;\n  min-height: 657px; }\n", ""]);
+exports.push([module.i, ".header_banner {\n  background-image: url(\"/assets/images/banner_bg.png\");\n  background-position: top center;\n  background-repeat: no-repeat;\n  min-height: 750px; }\n  .header_banner .banner_content {\n    margin-top: 40px;\n    color: #fff;\n    text-transform: uppercase; }\n    .header_banner .banner_content .sprater_b {\n      width: 80%;\n      margin: 0 auto; }\n      .header_banner .banner_content .sprater_b .b-top {\n        height: 1px;\n        background: linear-gradient(to right, transparent, #47679c, transparent); }\n      .header_banner .banner_content .sprater_b .b-bottom {\n        height: 1px;\n        background: linear-gradient(to right, transparent, #bdcde1, transparent); }\n    .header_banner .banner_content h4 {\n      font-size: 40px;\n      line-height: 40px;\n      font-weight: 600;\n      margin-bottom: 0;\n      margin-top: 40px; }\n    .header_banner .banner_content h1 {\n      font-size: 90px;\n      line-height: 78px;\n      font-weight: 600;\n      margin-bottom: 40px;\n      margin-top: 0; }\n", ""]);
 
 // exports
 
@@ -407,6 +474,71 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/title-heading/title-heading.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"heading\">\n\t<h3>{{heading}}</h3>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/title-heading/title-heading.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".heading h3 {\n  background: transparent url(\"/assets/images/title-bg.png\") no-repeat;\n  margin-top: 0;\n  margin-bottom: 0;\n  min-height: 72px;\n  color: #fff;\n  font-size: 30px;\n  font-weight: 500;\n  text-align: center;\n  max-width: 356px;\n  margin: 0 auto;\n  padding: 20px 0px; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/title-heading/title-heading.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleHeadingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TitleHeadingComponent = (function () {
+    function TitleHeadingComponent() {
+    }
+    TitleHeadingComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], TitleHeadingComponent.prototype, "heading", void 0);
+    TitleHeadingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-title-heading',
+            template: __webpack_require__("../../../../../src/app/components/title-heading/title-heading.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/title-heading/title-heading.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TitleHeadingComponent);
+    return TitleHeadingComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/layout/app.component.html":
 /***/ (function(module, exports) {
 
@@ -527,7 +659,7 @@ var DesignComponent = (function () {
 /***/ "../../../../../src/app/pages/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-banner></app-banner>"
+module.exports = "<app-banner></app-banner>\r\n<div class=\"container\">\r\n\t<app-about></app-about>\r\n</div>\r\n"
 
 /***/ }),
 
