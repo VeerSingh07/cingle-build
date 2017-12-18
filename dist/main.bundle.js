@@ -35,12 +35,16 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_fixed_top_fixed_top_component__ = __webpack_require__("../../../../../src/app/components/fixed-top/fixed-top.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_about_about_component__ = __webpack_require__("../../../../../src/app/components/about/about.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_title_heading_title_heading_component__ = __webpack_require__("../../../../../src/app/components/title-heading/title-heading.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_card_card_component__ = __webpack_require__("../../../../../src/app/components/card/card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_gallery_gallery_component__ = __webpack_require__("../../../../../src/app/components/gallery/gallery.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -69,7 +73,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_8__pages_design_design_component__["a" /* DesignComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__components_fixed_top_fixed_top_component__["a" /* FixedTopComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__components_about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_title_heading_title_heading_component__["a" /* TitleHeadingComponent */]
+                __WEBPACK_IMPORTED_MODULE_12__components_title_heading_title_heading_component__["a" /* TitleHeadingComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_card_card_component__["a" /* CardComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_gallery_gallery_component__["a" /* GalleryComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -224,6 +230,67 @@ var BannerComponent = (function () {
         __metadata("design:paramtypes", [])
     ], BannerComponent);
     return BannerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/card/card.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<a href=\"\">\n\t<div class=\"card-box\">\n\t\t<img src=\"assets/images/gallery_img1.png\" alt=\"\">\n\t\t<div class=\"overlay\">\n\t\t\t<h4>Hot Ballon</h4>\n\t\t\t<p>Enjoy the hot air ballon Ride in Shivalik mountains</p>\n\t\t</div>\n\t</div>\n</a>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/card/card.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".card-box {\n  position: relative;\n  min-height: 169px;\n  overflow: hidden; }\n  .card-box img {\n    width: 100%; }\n  .card-box .overlay {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 100%;\n    background: rgba(33, 58, 106, 0.75);\n    transition: 0.5s;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    text-align: center; }\n    .card-box .overlay h4 {\n      font-size: 20px;\n      font-weight: 500;\n      color: #fff;\n      margin-top: 50px;\n      margin-bottom: 20px; }\n    .card-box .overlay p {\n      font-size: 14px;\n      color: #fff; }\n  .card-box:hover .overlay {\n    top: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1); }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/card/card.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CardComponent = (function () {
+    function CardComponent() {
+    }
+    CardComponent.prototype.ngOnInit = function () {
+    };
+    CardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-card',
+            template: __webpack_require__("../../../../../src/app/components/card/card.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/card/card.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CardComponent);
+    return CardComponent;
 }());
 
 
@@ -407,6 +474,67 @@ var FooterComponent = (function () {
         __metadata("design:paramtypes", [])
     ], FooterComponent);
     return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/gallery/gallery.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"gallery\">\n\t<app-title-heading heading=\"Photo Gallery\"></app-title-heading>\n\t<div class=\"card-container row\">\n\t\t<div class=\"col-md-3\">\n\t\t\t<app-card></app-card>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t\t<app-card></app-card>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t\t<app-card></app-card>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t\t<app-card></app-card>\n\t\t</div>\n\t</div>\n\t\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/gallery/gallery.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".gallery {\n  margin-top: 100px; }\n  .gallery .card-container {\n    margin-top: 50px; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/gallery/gallery.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GalleryComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GalleryComponent = (function () {
+    function GalleryComponent() {
+    }
+    GalleryComponent.prototype.ngOnInit = function () {
+    };
+    GalleryComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-gallery',
+            template: __webpack_require__("../../../../../src/app/components/gallery/gallery.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/gallery/gallery.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GalleryComponent);
+    return GalleryComponent;
 }());
 
 
@@ -659,7 +787,7 @@ var DesignComponent = (function () {
 /***/ "../../../../../src/app/pages/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-banner></app-banner>\r\n<div class=\"container\">\r\n\t<app-about></app-about>\r\n</div>\r\n"
+module.exports = "<app-banner></app-banner>\r\n<div class=\"container\">\r\n\t<app-about></app-about>\r\n\t<app-gallery></app-gallery>\r\n</div>\r\n"
 
 /***/ }),
 
